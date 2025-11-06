@@ -55,9 +55,55 @@ npm start
 
 ## Project Structure
 
+Frontend(React)
 ```
-/backend        # Spring Boot REST API
-/frontend       # React frontend app
+/components
+    ├── Cart.css
+    ├── Cart.jsx
+    ├── Checkout.css
+    ├── Checkout.jsx
+    ├── FoodItemCard.css
+    ├── FoodItemCard.jsx
+    ├── Navbar.css
+    ├── Navbar.jsx
+/context
+    ├── CartContext.jsx
+/pages
+    ├── Home.css
+    ├── Home.jsx
+/services
+    ├── api.js
+App.css
+App.jsx
+index.js
+```
+Backend(Java)
+```
+src/main/java/com.food
+    ├── BackendApplication.java
+    ├── config
+    │   ├── DataLoader.java
+    │   └── WebConfig.java
+    ├── Controller
+    │   ├── Customer_detailsController.java
+    │   ├── Item_detailsController.java
+    │   └── Order_itemsController.java
+    ├── dto
+    │   ├── Cart_itemDTO.java
+    │   └── Customer_detailsDTO.java
+    ├── model
+    │   ├── Customer_details.java
+    │   ├── Item_details.java
+    │   └── Order_items.java
+    ├── Repository
+    │   ├── Customer_detailsRepository.java
+    │   ├── Item_detailsRepository.java
+    │   └── Order_itemsRepository.java
+    └── Service
+        ├── Customer_detailsService.java
+        ├── Item_detailsService.java
+        └── Order_itemsService.java
+
 ```
 
 ## Database Schema
