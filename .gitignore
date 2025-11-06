@@ -1,0 +1,66 @@
+# ---- BACKEND (Spring Boot - Maven/Gradle, Java) ----
+/target/
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs
+logs/
+*.log
+
+# IDEs
+.idea/
+*.iws
+*.ipr
+*.iml
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.classpath
+*.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ---- FRONTEND (React, Node.js) ----
+node_modules/
+build/
+dist/
+.npm/
+.env
+.env.*
+
+
+# Test coverage
+coverage/
+lcov-report/
+
+# npm/yarn error logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- GENERAL ----
+# Personal/system files
+*.swp
+*.swo

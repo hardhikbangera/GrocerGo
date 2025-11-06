@@ -1,0 +1,105 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🏠 Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 0 20px;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #ff6b00;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero p {
+  color: #555;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* 🍕 Category Buttons */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  border: 2px solid #ff6b00;
+  background: transparent;
+  color: #ff6b00;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.btn--primary {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #ff914d;
+  color: white;
+}
+
+/* 🍔 Food Grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.food-grid .food-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.food-grid .food-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Loader Fallback */
+.container h2 {
+  text-align: center;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .category-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+}
