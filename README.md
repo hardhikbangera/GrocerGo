@@ -1,6 +1,7 @@
-# Food Delivery Website
+# GrocerGo
 
-A full-stack food delivery platform built with **React** (frontend), **Spring Boot** (backend), and **MySQL** (database).
+
+A full-stack Grocery delivery website built with **React** (frontend), **Spring Boot** (backend), and **MySQL** (database).
 
 ## Features
 
